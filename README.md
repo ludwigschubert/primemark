@@ -20,3 +20,5 @@ test_runtime[prime_sieve]         [...]    980.1151 (1.0)    [...]
 test_runtime[primes_sqrt]         [...]  5,051.5395 (5.15)   [...]
 test_runtime[primes_exhaustive]   [...] 39,739.6182 (40.55)  [...]
 ----------------------------------[...]----------------------[...]
+
+<img width="1147" alt="Screen Shot 2021-05-18 at 20 53 08" src="https://user-images.githubusercontent.com/1167977/118715032-0efcac00-b81b-11eb-8688-39988363d402.png">
