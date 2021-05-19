@@ -14,6 +14,11 @@ black = "^21.5b1"
 isort = "^5.8.0"
 pylint = "^2.8.2"
 pre-commit = "^2.12.1"
+pygal = "^2.4.0"
+pygaljs = "^1.0.2"
+
+[tool.pytest.ini_options]
+addopts = "--benchmark-columns=mean,stddev,median,rounds"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -1,7 +1,6 @@
 import pytest
 
-import bruteforce
-import sieves
+from . import bruteforce, sieves
 
 algorithms = [
     bruteforce.primes_exhaustive,  # careful: exponential runtime

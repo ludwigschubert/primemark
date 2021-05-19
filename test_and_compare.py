@@ -1,5 +1,5 @@
-from bruteforce import hardcoded
-from test_and_benchmark import algorithms
+from .bruteforce import hardcoded
+from .test_and_benchmark import algorithms
 
 
 def test_prime_algos_agree_with_hardcoded():

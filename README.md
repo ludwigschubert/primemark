@@ -16,8 +16,8 @@ Tests can be run as normal, from VSCode or from the CLI: `python -m pytest .`
 
 # Developing
 
-I added a couple tools as git pre-commit hooks; managed in `.pre-commit-config.yaml` via the `pre-commit` package.
-To install the git hooks after a fresh checkout: `poetry run pre-commit install`
+I added a couple tools as git pre-commit hooks; managed via the `pre-commit` package.
+To install the git hooks after a fresh checkout: `poetry run pre-commit install`. After this, every `git commit` will first run the checks specified in `.pre-commit-config.yaml`; i.e. linting (`pylint`), import sorting (`isort`), and formatting (`black`).
 
 # Example results
 
