@@ -8,6 +8,8 @@ authors = ["Ludwig Schubert <git@ludwigschubert.de>"]
 python = "^3.7"
 pytest = "^6.2.4"
 pytest-benchmark = "^3.4.1"
+Pillow = "^8.2.0"
+numpy = "1.20"
 
 [tool.poetry.dev-dependencies]
 black = "^21.5b1"
