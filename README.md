@@ -14,6 +14,11 @@ In the folder you checked out this project to, run `poetry install`. That should
 
 Tests can be run as normal, from VSCode or from the CLI: `python -m pytest .`
 
+Running `[poetry run] python visualize.py` produces an ulam spiral visualization in the `results` folder:
+
+![visualization_ulam_spiral](https://user-images.githubusercontent.com/1167977/119270670-c1ef5000-bbf5-11eb-929a-36bc450f32f4.png)
+
+
 # Developing
 
 I added a couple tools as git pre-commit hooks; managed via the `pre-commit` package.
