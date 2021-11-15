@@ -8,8 +8,19 @@ authors = ["Ludwig Schubert <git@ludwigschubert.de>"]
 python = "^3.7"
 pytest = "^6.2.4"
 pytest-benchmark = "^3.4.1"
+Pillow = "^8.2.0"
+numpy = "1.20"
 
 [tool.poetry.dev-dependencies]
+black = "^21.5b1"
+isort = "^5.8.0"
+pylint = "^2.8.2"
+pre-commit = "^2.12.1"
+pygal = "^2.4.0"
+pygaljs = "^1.0.2"
+
+[tool.pytest.ini_options]
+addopts = "--benchmark-columns=mean,stddev,median,rounds"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

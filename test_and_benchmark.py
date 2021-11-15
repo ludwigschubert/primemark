@@ -1,21 +1,22 @@
 import pytest
 
-import bruteforce
-import sieve_eratosthenes
-
-
-primes_up_to_100 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+from . import bruteforce, sieves
 
 algorithms = [
     bruteforce.primes_exhaustive,  # careful: exponential runtime
     bruteforce.primes_sqrt,  # careful: exponential runtime
-    sieve_eratosthenes.prime_sieve
+    sieves.eratosthenes,
+    sieves.sundaram,
 ]
+
 
 @pytest.mark.parametrize("algorithm", algorithms)
 def test_correctness(algorithm):
-    result = algorithm(100)
-    assert result == primes_up_to_100
+    for upto in range(1, bruteforce.hardcoded.max + 1):
+        golden = bruteforce.hardcoded(upto)
+        result = algorithm(upto)
+        assert result == golden
+
 
 @pytest.mark.parametrize("algorithm", algorithms)
 def test_runtime(benchmark, algorithm):
